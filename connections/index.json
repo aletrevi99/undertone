@@ -1,0 +1,12 @@
+{
+  "connections": [
+    {
+      "file": "deezer-catalog.json",
+      "name": "Deezer catalog",
+      "description": "Search, artists, albums, tracks, charts and artwork from Deezer's public catalog. No account needed.",
+      "does": [
+        "catalog"
+      ]
+    }
+  ]
+}

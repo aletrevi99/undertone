@@ -1,0 +1,16 @@
+services:
+  undertone:
+    build: .
+    image: undertone
+    container_name: undertone
+    restart: unless-stopped
+    ports:
+      - "8787:8787"
+    volumes:
+      - undertone-data:/data
+      - ./connections:/app/connections:ro
+    environment:
+      SERVER_NAME: Undertone
+
+volumes:
+  undertone-data:
